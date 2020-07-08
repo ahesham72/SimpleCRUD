@@ -4,7 +4,7 @@ include ('conn.php');
 
 $query ='select * from product';
 
-$result=$con->query($query);
+$result=$conn->query($query);
 
 if($result->num_rows>0){
 
