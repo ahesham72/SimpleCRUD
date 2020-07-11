@@ -1,11 +1,26 @@
-<?php 
-include ('conn.php');
+<?php
+include('conn.php');
+include('layout.html');
+
 
 ?>
-<form action="handeladd.php" method="post">
 
-<input type="text" name='name' placeholder="Name">
-<input type="text" name='description' placeholder="description">
+<div class="container">
 
-<input type="submit" value="Add">
+<form action="handeladd.php" method="POST">
+
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" placeholder="Enter Name" class="form-control"
+     id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" placeholder="Enter Description" class="form-control description" 
+    id="" name="description">
+  </div>
+ 
+  <input type="submit" class="btn btn-primary" value="ADD">
 </form>
+</div>
